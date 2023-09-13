@@ -1,0 +1,12 @@
+.nuestro-rest-container {
+    display: flex;
+    align-items: center;
+    color: #daa519;
+    padding: 80px;
+    gap: 10px;
+    background-color: #101010;
+}
+.imagen-chef {
+    max-width: 300px;
+}
+

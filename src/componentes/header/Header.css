@@ -1,0 +1,18 @@
+.app-header {
+    background-color: #1a1a24;
+    height: 200px;
+}
+.header-title {
+    padding: 40px;
+    margin: 0;
+    color: #e4c252;
+}
+.logo-restaurant {   
+    width: 160px;
+
+}
+.header-container{
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+}

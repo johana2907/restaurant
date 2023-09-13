@@ -1,0 +1,38 @@
+.app-footer{
+    background: #1a1a24;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.footer-container{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.foo-container{
+    text-align: center;
+}
+
+.foo-container h4{
+    color: #cdeb07;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.foo-container p{
+    color: #ece222;
+}
+
+.titulo-final{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+
