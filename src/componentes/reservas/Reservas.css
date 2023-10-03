@@ -1,23 +1,36 @@
-.wrap{
-    
+.reservas-contenedor{
+    padding: 202px;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     flex-flow: wrap;
     border-radius: 25px;
-    padding: 10px;
-    background-color: aliceblue;
+    background-color: #3c3e40;
 }
-.formContent, .Column{
-    margin-top: 40px;
+
+
+.formulario-contenedor{
+        text-align: left;
+        border: 2px solid black;
+        padding: 80px;
+        border-radius: 30px;
+        background-color: #6057c7;
+        display: flex;
+        flex-direction: column;
 }
+
+.Column{
+    margin-top: 40px; 
+}
+
+
 .form-reserva{
     border: 2px solid black;
     padding: 35px;
     border-radius: 30px;
-    background-color: aliceblue;
+    background-color: #767a7d;
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 
 .tabla-reserva{
@@ -28,23 +41,13 @@
     width: 100%;
 }
 
+
 .tabla-reserva td, .tabla-reserva th {
     border: 1px solid #ddd;
     padding: 10px;
   }
 
-.tabla-reserva tr:nth-child(even){
-    background-color: #f2f2f2;
-}
 
 .tabla-reserva tr:hover {
     background-color: #ddd;
-}
-
-.tabla-reserva th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: rgb(8, 138, 237);
-  color: whitesmoke;
 }
