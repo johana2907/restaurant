@@ -1,0 +1,11 @@
+.menu-link {
+    color: #dbc16d;
+    text-decoration: none;
+}
+.menu-list {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 60px;
+    padding-right: 40px;
+}

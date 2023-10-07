@@ -1,0 +1,56 @@
+.reservas-contenedor{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-flow: wrap;
+    background-color: #101010;
+    padding: 20px;
+}
+
+
+.formulario-contenedor{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.Column{
+    max-width: 100%;
+    overflow: auto;
+}
+
+.form-reserva {
+    padding: 35px;
+    border-radius: 10px;
+    background-color: #3f3f50;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #ffffff;
+}
+
+.form-reserva .form-label {
+    margin-bottom: 5px;
+}
+
+.form-reserva .form-control {
+    margin-bottom: 8px;
+}
+
+.tabla-reserva {
+    padding: 8px;
+    width: 100%;
+    background: white;
+    font-size: 12px;
+    text-align: left;
+}
+
+.tabla-reserva td, .tabla-reserva th {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+
+
+.tabla-reserva tr:hover {
+    background-color: #ddd;
+}
