@@ -1,10 +1,15 @@
 .nuestro-rest-container {
     display: flex;
     align-items: center;
-    color: #daa519;
-    padding: 80px;
+    color: #fffbf0;
+    padding: 20px;
     gap: 10px;
     background-color: #101010;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.parrafo-container {
+    max-width: 500px;
 }
 .imagen-chef {
     max-width: 300px;

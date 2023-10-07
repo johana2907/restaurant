@@ -1,4 +1,4 @@
-import React, { useState } from "react"; 
+import React, { useState, useLayoutEffect } from "react"; 
 import { Button, Form } from 'react-bootstrap';
 import { collection, addDoc, onSnapshot } from 'firebase/firestore';
 import db from '../../servicios/firebase';
@@ -22,22 +22,36 @@ const Reservas
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
-    console.log('formulario', form)
-
-
     const onSave = (e) => {
-
-        console.log('si estamos en el onSave')
-        
         /*Guardar la reservacion*/
         e.preventDefault();
         addDoc(collection(db, 'reserva'), form).
-            then(resp => swal("Reserva exitosa", "Gracias por tu reservacion", "success")).
-            catch(err => swal("Error!", "Tu reserva no fue exitosa ", "error"))
+            then(resp => { 
+                swal("Reserva exitosa", "Gracias por tu reservacion", "success");
+                setForm({
+                    nombre: "",
+                    celular: "",
+                    fecha: "",
+                    hora: "",
+                    correo: "",
+                    asistentes:"",
+                })
+            }).catch(err => swal("Error!", "Tu reserva no fue exitosa ", "error"))
             
     };
 
-    
+    const cargarReservas = async () => {
+        onSnapshot(collection(db, 'reserva'), (snapshot) => {
+            const list = [];
+            snapshot.forEach(doc => list.push({ ...doc.data(), id: doc.id }))
+            setReservas(list);
+        })
+        console.log(reservas);
+    }
+
+    useLayoutEffect(() => {
+        cargarReservas();
+    }, [])
 
     return (
         <div className="reservas-contenedor">
@@ -66,11 +80,11 @@ const Reservas
                     <thead>
                         <tr>
                             <th>Nombre</th>
-                            <th>celular</th>
+                            <th>Celular</th>
                             <th>Fecha</th>
-                            <th>correo</th>
+                            <th>Correo</th>
                             <th>Hora</th>
-                            <th>asistentes</th>
+                            <th>Asistentes</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -80,11 +94,11 @@ const Reservas
                                 return (
                                     <tr key={index}>
                                         <td>{reserva.nombre}</td>
-                                        <td>{reserva.telefono}</td>
+                                        <td>{reserva.celular}</td>
                                         <td>{reserva.fecha}</td>
                                         <td>{reserva.correo}</td>
                                         <td>{reserva.hora}</td>
-                                        <td>{reserva.comensales}</td>
+                                        <td>{reserva.asistentes}</td>
                                     </tr>
                                 )
                             })

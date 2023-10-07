@@ -1,46 +1,49 @@
 .reservas-contenedor{
-    padding: 202px;
     display: flex;
+    gap: 20px;
     justify-content: space-around;
     flex-flow: wrap;
-    border-radius: 25px;
-    background-color: #3c3e40;
+    background-color: #101010;
+    padding: 20px;
 }
 
 
 .formulario-contenedor{
-        text-align: left;
-        border: 2px solid black;
-        padding: 80px;
-        border-radius: 30px;
-        background-color: #6057c7;
-        display: flex;
-        flex-direction: column;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .Column{
-    margin-top: 40px; 
+    max-width: 100%;
+    overflow: auto;
 }
 
-
-.form-reserva{
-    border: 2px solid black;
+.form-reserva {
     padding: 35px;
-    border-radius: 30px;
-    background-color: #767a7d;
+    border-radius: 10px;
+    background-color: #3f3f50;
     display: flex;
     flex-direction: column;
     text-align: left;
+    color: #ffffff;
 }
 
-.tabla-reserva{
-    border: 1px solid #ddd;
+.form-reserva .form-label {
+    margin-bottom: 5px;
+}
+
+.form-reserva .form-control {
+    margin-bottom: 8px;
+}
+
+.tabla-reserva {
     padding: 8px;
-    border-radius: 25px;
-    border-collapse: collapse;
     width: 100%;
+    background: white;
+    font-size: 12px;
+    text-align: left;
 }
-
 
 .tabla-reserva td, .tabla-reserva th {
     border: 1px solid #ddd;

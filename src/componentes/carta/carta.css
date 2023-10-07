@@ -1,0 +1,20 @@
+.carta-contenedor {
+    padding: 10px;
+    background: #000000;
+    color: white;
+}
+
+.carta-productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.carta-contenedor h3 {
+    margin-top: 30px;
+}
+
+.card-menu {
+    align-items: center;
+}

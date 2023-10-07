@@ -5,6 +5,7 @@ import NuestroRestaurante from './componentes/nuestro-reataurante/NuestroRestaur
 import Carta from './componentes/carta/Carta';
 import Footer from './componentes/footer/Footer';
 import Reservas from './componentes/reservas/Reservas';
+import 'bootstrap/dist/css/bootstrap.css';
 
 
 function App() {
@@ -18,11 +19,6 @@ function App() {
         <Route path='/reservas' element={<Reservas />} />
       </Routes>
       <Footer />
-      
-        
-      
-
-
     </div>
   );
 }

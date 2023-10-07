@@ -12,21 +12,23 @@
     margin: auto;
     padding-bottom: 50px;
     border-bottom: 1px solid #ccc;
+    flex-flow: wrap;
 }
 
 .foo-container{
     text-align: center;
+    padding-left: 10px;
 }
 
 .foo-container h4{
-    color: #cdeb07;
-    border-bottom: 3px solid #af20d3;
+    color: #ffffff;
+    border-bottom: 3px solid #ab7020;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
 .foo-container p{
-    color: #ece222;
+    color: #e4c253;
 }
 
 .titulo-final{
